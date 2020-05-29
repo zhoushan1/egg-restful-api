@@ -10,7 +10,12 @@ module.exports = appInfo => {
    * built-in config
    * @type {Egg.EggAppConfig}
    **/
-  const config = exports = {};
+  const config = exports = {
+    news: {
+      pageSize: 5,
+      serverUrl: 'https://hacker-news.firebaseio.com/v0',
+    },
+  };
 
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1590716709779_1978';
